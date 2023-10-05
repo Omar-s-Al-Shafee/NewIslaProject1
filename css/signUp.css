@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap);
+
+body {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background:#000 ;
+    height:7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:#fff;
+
+
+}
+.headLeft{
+
+}
+.headlogo{
+width:5vw;
+height: 5vh;
+}
+.headCenter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+
+}
+.headCenter a{
+    text-decoration: none;
+    color:#FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headRight{
+color: #fff;
+}
+.headRightOnline{
+    position: relative;
+}
+.headRightOnline::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
+
+
+}
+.headProfile-img{
+    width: 2.9vw;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+/* <!-- ----------------profile-drop-down-menu--------- --> */
+.profile-menu-wrap {
+    position: absolute;
+    top: 7vh;
+    right: 5%;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.profile-menu-wrap.open-menu {
+    max-height: 400px;
+}
+.profile-menu {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    margin: 10;
+}
+.user-info{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #fff;
+}
+.user-info img{
+    width: 2vw!important ;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+.profile-menu-link{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.profile-menu-link span{
+    position: fixed;
+    right: 7%;
+}
